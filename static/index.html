@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Collab Scribble</title>
+</head>
+<body>
+  <!-- <div id = "collabtextpad" contenteditable="true" style="height: 100%; width: 100%; position: fixed;"> -->
+  <!-- </div> -->
+  <div>
+    <input type="text" id="candidate"/>
+    <button id= "add" onclick="addItem()">Add Guest</button>
+    <button id= "remove" onclick="removeItem()">Remove Guest</button>
+    <ul id="dynamic-list"></ul>
+    <button id= "collabBtn" onclick="startCollab()">start collab</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
+  <script type = "text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</body>
+</html>
